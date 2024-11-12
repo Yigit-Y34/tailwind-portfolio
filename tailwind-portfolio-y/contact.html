@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="text-white text-2xl font-semibold">Kişisel Portfolio Sitesi</a>
+            <ul class="flex space-x-6 text-white">
+                <li><a href="index.html" class="hover:text-gray-300">Anasayfa</a></li>
+                <li><a href="projects.html" class="hover:text-gray-300">Projeler</a></li>
+                <li><a href="contact.html" class="hover:text-gray-300">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Yiğit Yeşiloğlu</h1>
+            <p class="mt-2">Merhaba ben Yiğit, yazılım öğrenmeye çalışan bir öğrenciyim. Bu da benim kişisel sayfam.</p>
+        </div>
+    </header>
+
+    <div class="flex justify-center items-center mt-10">
+        <div class="bg-gray rounded-lg shadow-lg p-8 w-full max-w-md">
+            <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Benimle İletişime Geçin:</h2>
+            <form action="submit.php" method="post" class="flex flex-col">
+                <label for="name" class="mb-2 text-gray-600">İsim:</label>
+                <input type="text" id="name" name="name" required class="p-2 rounded border border-gray-300 mb-4">
+
+                <label for="email" class="mb-2 text-gray-600">E-posta:</label>
+                <input type="email" id="email" name="email" required class="p-2 rounded border border-gray-300 mb-4">
+
+                <label for="mesaj" class="mb-2 text-gray-600">Mesaj:</label>
+                <textarea id="mesaj" name="mesaj" rows="4" class="p-2 rounded border border-gray-300 mb-4"
+                    required></textarea>
+
+                <input type="submit" value="Gönder"
+                    class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 cursor-pointer">
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-blue-600 text-white py-8 mt-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Yiğit Yeşiloğlu. Tüm hakları saklıdır.</p>
+            <ul class="flex justify-center space-x-6">
+                <li><a href="#" class="hover:text-gray-300">Facebook</a></li>
+                <li><a href="#" class="hover:text-gray-300">Instagram</a></li>
+                <li><a href="#" class="hover:text-gray-300">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
